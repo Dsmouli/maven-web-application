@@ -16,7 +16,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mavenwebappsvc
-  namespace: ns-1	
+  namespace: ns-1
 spec:
   type: NodePort
   selector:
