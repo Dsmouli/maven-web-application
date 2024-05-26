@@ -8,7 +8,7 @@ spec:
   strategy:
     type: Recreate
   selector:
-    mathchLabels:
+    matchLabels:
       app: mavenwebapp
   template:
     metadata:
