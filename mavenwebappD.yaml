@@ -9,7 +9,7 @@ spec:
     type: Recreate
   selector:
     mathchLabels:
-    app: mavenwebapp
+      app: mavenwebapp
   template:
     metadata:
       name: mavenwebapppod
