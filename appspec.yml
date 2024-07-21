@@ -2,3 +2,4 @@ version: 0.0
 os: linux
 echo pull the docker image
 docker pull dsmouli/mavenwebapp:44
+docker run -d -p 8080:8080 dsmouli/mavenwebapp:44
