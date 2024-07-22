@@ -1,6 +1,7 @@
 version: 0.0
 os: linux
-Hooks:
+
+hooks:
   AfterInstall:
     - location: scripts/start_container.sh
       timeout: 300
