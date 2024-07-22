@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 Hooks:
-  BeforeInstall:
+  AfterInstall:
       - echo pull the docker image
       - docker pull dsmouli/mavenwebapp:44
       - docker run -d -p 8080:8080 dsmouli/mavenwebapp:44
