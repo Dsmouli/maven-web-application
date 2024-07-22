@@ -2,6 +2,6 @@ version: 0.0
 os: linux
 Hooks:
   AfterInstall:
-      - echo pull the docker image
-      - docker pull dsmouli/mavenwebapp:44
-      - docker run -d -p 8080:8080 dsmouli/mavenwebapp:44
+    - location: scripts/start_container.sh
+      timeout: 300
+      runas: root
