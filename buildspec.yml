@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8 # Options: corretto8, corretto11, corretto17, corretto21, corretto25
+  pre_build:
+    commands:
+      - echo "Checking Java version..."
+      - java -version
+  build:
+    commands:
+      - echo "Building project..."
+      - mvn test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
+artifacts:
+  files:
+    - target/maven-web-application.war
